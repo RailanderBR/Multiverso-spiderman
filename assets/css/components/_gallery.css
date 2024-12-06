@@ -1,0 +1,29 @@
+.gallery {
+  position: absolute; /* ou fixed, dependendo do comportamento desejado */
+  bottom: 0; /* Fixar na parte inferior */
+  left: 0;
+  width: 100%; /* Garantir que ocupa toda a largura */
+  padding: 20px;
+  padding-left: 0;
+
+}
+
+.gallery ul {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.gallery ul li {
+  margin-left: 25px;
+}
+
+.gallery ul li:first-child {
+  margin-left: 0px;
+}
+
+.gallery ul li a img {
+  border: solid 6px var(--primary-color);
+  border-radius: 15px;  
+  max-height: 120px; /* Adicione um tamanho máximo, se necessário */
+  object-fit: cover; /* Ajusta o conteúdo dentro da caixa */
+}
